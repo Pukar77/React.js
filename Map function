@@ -1,0 +1,31 @@
+
+//In ReactJs, the maps are used for traversing or displaying the list of similar objects of a component. It is used to iterate over an array and manipulate or change data items
+
+import "./App.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+
+
+function App() {
+
+let myfood = ["Dal", "bhat", "Tarkari", "achar"];
+
+
+  return (  
+    <>
+    <h1>My Favorite Food</h1> 
+    <ul class="list-group">
+  
+    {myfood.map((fooditem) =>(
+
+    <li key = {fooditem} class="list-group-item">{fooditem}</li> 
+    ))}
+
+  
+  
+</ul>
+</>
+    
+  )
+}
+
+export default App
