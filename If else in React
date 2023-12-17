@@ -1,0 +1,34 @@
+import "./App.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+
+
+function App() {
+
+let myfood = ["Dal", "bhat", "Tarkari", "achar"];
+
+if(myfood.length === 0){
+  return <h1>You donot have any favorite food</h1>
+}
+
+else{
+
+  return (  
+    <>
+    <h1>My Favorite Food</h1> 
+    <ul class="list-group">
+  
+    {myfood.map((fooditem) =>(
+
+    <li key = {fooditem} class="list-group-item">{fooditem}</li> 
+    ))}
+
+  
+  
+</ul>
+</>
+    
+  )
+    }
+}
+
+export default App
