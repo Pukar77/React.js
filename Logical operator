@@ -1,0 +1,33 @@
+
+When a condition is true, it renders the object
+
+
+import "./App.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+
+
+function App() {
+
+let myfood = [/*"Dal", "bhat", "Tarkari", "achar"*/];
+
+  return (  
+    <>
+    <h1>My Favorite Food</h1> 
+    {myfood.length === 0 && <h3>You donot have any favorite food</h3>}    //if myfood.length = 0 xa bhane it returns the next value, here it will return yo donot have anty favoriate food as the arrays are commented here
+    <ul class="list-group">
+  
+    {myfood.map((fooditem) =>(
+
+    <li key = {fooditem} class="list-group-item">{fooditem}</li> 
+    ))}
+
+  
+  
+</ul>
+</>
+    
+  )
+    }
+
+
+export default App
