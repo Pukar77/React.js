@@ -1,0 +1,32 @@
+
+//alternative of if-else
+
+import "./App.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+
+
+function App() {
+
+let myfood = [/*"Dal", "bhat", "Tarkari", "achar"*/];
+
+  return (  
+    <>
+    <h1>My Favorite Food</h1> 
+    {myfood.length === 0 ? <h3>You donot have any favorite food</h3> : null}
+    <ul class="list-group">
+  
+    {myfood.map((fooditem) =>(
+
+    <li key = {fooditem} class="list-group-item">{fooditem}</li> 
+    ))}
+
+  
+  
+</ul>
+</>
+    
+  )
+    }
+
+
+export default App
