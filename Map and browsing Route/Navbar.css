@@ -1,0 +1,37 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: antiquewhite;
+    width: 100%;
+    margin: auto;
+
+}
+
+.left{
+    font-size: 40px;
+    font-weight: 600;
+    color: red;
+    width: auto;
+}
+
+.icon{
+    display: flex;
+    width: auto;
+}
+
+.icon ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.icon ul li{
+    list-style: none;
+    color: black;
+    display: flex;
+    cursor: pointer;
+    
+}
